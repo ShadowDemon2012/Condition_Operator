@@ -1,5 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!_1");
+        int deliveryDistance = 95;
+        int deliveryTime = 1;
+
+        if (deliveryDistance>20) { deliveryTime++;}
+
+        if (deliveryDistance >60) {deliveryTime++;
+        }
+        System.out.println("Потребуется дней "+ deliveryTime);
+
+
     }
 }
