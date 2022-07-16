@@ -1,21 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int clientOs=1;
-        int clientDeviceYear=2000;
-        if (clientOs ==0 && clientDeviceYear>=2015 )
-            System.out.println("Установите версию приложения для iOS по ссылке");
-            else {
-            if (clientOs ==0 && clientDeviceYear < 2015)
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        }
-
-        if (clientOs !=0 && clientDeviceYear>=2015 )
-            System.out.println("Установите версию приложения для Android по ссылке");
-            else {
-            if (clientOs != 0 && clientDeviceYear < 2015)
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }
-
-
+        int year=2008;
+        boolean leapYear = (year % 4 ==0 && year % 100!=0 || year %400==0);
+        if ( leapYear ) System.out.println("год високосный");
+        else System.out.println("год не високосный");
     }
 }
