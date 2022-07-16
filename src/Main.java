@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int deliveryDistance = 95;
+        int deliveryDistance = 80;
         int deliveryTime = 0;
         if (deliveryDistance <=20) { deliveryTime =deliveryTime + 1;
             System.out.println("Потребуется дней "+ deliveryTime);
@@ -10,7 +10,7 @@ public class Main {
                    }
         if (deliveryDistance >60 && deliveryDistance <=100) {deliveryTime = deliveryTime +3;
             System.out.println("Потребуется дней "+ deliveryTime);
-        }else System.out.println("В такую даль не доставляем ((");
+        }
 
 
     }
