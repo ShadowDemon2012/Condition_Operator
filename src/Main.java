@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!_1");
+        int year=2008;
+        boolean leapYear = (year % 4 ==0 && year % 100!=0 || year %400==0);
+        if ( leapYear ) System.out.println("год високосный");
+        else System.out.println("год не високосный");
     }
 }
